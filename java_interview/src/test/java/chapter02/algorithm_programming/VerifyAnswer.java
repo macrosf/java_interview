@@ -22,6 +22,6 @@ public class VerifyAnswer {
 		//verify answer
 		File f = new File(output);
 		long len = f.length();
-		Assert.assertEquals(10, len);		
+		Assert.assertEquals(192, len);		
 	}
 }
