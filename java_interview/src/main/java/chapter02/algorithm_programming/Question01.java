@@ -1,11 +1,8 @@
 package chapter02.algorithm_programming;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-
-import org.junit.Test;
 
 /**
  * 编写一个程序，将a.txt文件中的单词与b.txt文件中的单词交替合并到c.txt文件中，
@@ -15,7 +12,7 @@ import org.junit.Test;
  */
 public class Question01 {
 
-	public void answer01(String output) throws Exception {
+	public void answer(String output) throws Exception {
 		FileManager a = new FileManager("src/main/resources/chapter02/algorithm_programming/a.txt", new char[]{'\n'});
 		FileManager b = new FileManager("src/main/resources/chapter02/algorithm_programming/b.txt", new char[]{'\n', ' '});
 		FileWriter c = new FileWriter(output);
@@ -35,26 +32,6 @@ public class Question01 {
 		c.close();
 	}
 	
-//	@Test
-//	public void answer01() throws Exception {
-//		FileManager a = new FileManager("src/test/resources/chapter02/algorithm_programming/a.txt", new char[]{'\n'});
-//		FileManager b = new FileManager("src/test/resources/chapter02/algorithm_programming/b.txt", new char[]{'\n', ' '});
-//		FileWriter c = new FileWriter("src/test/resources/chapter02/algorithm_programming/c.txt");
-//		String aWord = null;
-//		String bWord = null;
-//		while((aWord=a.nextWord())!=null) {
-//			c.write(aWord+"\n");
-//			bWord=b.nextWord();
-//			if(bWord!=null)
-//				c.write(bWord+"\n");
-//		}
-//		
-//		while((bWord=b.nextWord())!=null) {
-//			c.write(bWord+"\n");
-//		}
-//		
-//		c.close();		
-//	}
 }
 
 class FileManager {
