@@ -1,0 +1,14 @@
+Exception 
+Exception
+in 
+in
+thread 
+thread
+"main" 
+"main"
+java.io.FileNotFoundException: 
+java.io.FileNotFoundException:
+a.txt 
+a.txt
+(系统找不到指定的文件。)
+(系统找不到指定的文件。)
